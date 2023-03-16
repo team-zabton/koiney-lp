@@ -109,3 +109,7 @@ body {
     }
   }
   
+  .store-icons img {
+    width: 150px; /* 好みのサイズに変更できます */
+    height: auto;
+  }
