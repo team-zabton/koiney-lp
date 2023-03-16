@@ -106,8 +106,10 @@ body {
   }
   
   .store-icons {
-    width: 150px;
-    margin: 0 10px;
+    width: 160px;
+    height: auto;
+    margin: 0 5px;
+    object-fit: contain;
   }
   
   .footer {
