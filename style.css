@@ -27,18 +27,6 @@ body {
     }
   }
   
-  .title {
-    font-size: 48px;
-    margin-bottom: 10px;
-    animation: fadeIn 2s ease 1s;
-  }
-  
-  .subtitle {
-    font-size: 24px;
-    margin-bottom: 20px;
-    animation: fadeIn 2s ease 1.5s;
-  }
-  
   .cta-buttons {
     display: flex;
     animation: fadeIn 2s ease 2s;
@@ -63,6 +51,13 @@ body {
     flex-wrap: wrap;
   }
   
+  .feature img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: contain;
+  }
+
   .feature {
     width: 30%;
     margin: 20px 0;
@@ -123,23 +118,27 @@ body {
   }
   
   .language-switch {
-    position: absolute;
-    top: 10px;
-    right: 10px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
   }
   
   .language-button {
-    background-color: #f1f1f1;
+    background-color: #222;
+    color: #fff;
     border: none;
-    color: #333;
-    padding: 5px 10px;
-    text-align: center;
-    text-decoration: none;
+    padding: 8px 16px;
     font-size: 14px;
-    margin: 0 2px;
     cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 5px;
+    border-radius: 4px;
   }
   
+  .language-button:hover {
+    background-color: #444;
+  }
+
   .hidden {
     display: none;
   }
@@ -165,7 +164,65 @@ body {
       font-size: 16px;
     }
     .store-icons {
-      width: 120px;
-      margin: 0 5px;
+        width: 160px;
+        height: auto;
+        margin: 0 5px;
+        object-fit: contain;
     }
   }  
+  /* 問い合わせセクションスタイル追加 */
+.contact {
+    text-align: center;
+    padding: 3rem 0;
+    background-color: #f8f8f8;
+  }
+  
+  .contact-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-description {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-button {
+    background-color: #222;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-button:hover {
+    background-color: #444;
+  }
+  
+  /* ヘッダータイトルとサブタイトルの文字サイズを大きくする */
+  .title {
+    font-size: 3rem;
+  }
+  
+  .subtitle {
+    font-size: 1.5rem;
+  }
+  
+  /* アニメーション追加 */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .title,
+  .subtitle {
+    animation: fadeIn 1s ease-out;
+  }
+  
