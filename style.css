@@ -145,6 +145,7 @@ body {
     display: none;
   }
   
+
   @media screen and (max-width: 768px) {
     .title {
       font-size: 32px;
@@ -226,5 +227,11 @@ body {
   .title,
   .subtitle {
     animation: fadeIn 1s ease-out;
+  }
+
+  /* ストアアイコンのサイズ調整 */
+.store-icons img {
+    width: 150px;
+    height: auto;
   }
   
