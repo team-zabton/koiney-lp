@@ -1,23 +1,21 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const languageButtons = document.querySelectorAll('.language-button');
-    const languageElements = document.querySelectorAll('[class*=ja], [class*=en]');
+  document.addEventListener("DOMContentLoaded", function() {
+    const languageButtons = document.querySelectorAll(".language-button");
+    const languageElements = document.querySelectorAll(".ja, .en");
   
-    function switchLanguage(lang) {
-      languageElements.forEach(element => {
-        if (element.classList.contains(lang)) {
-          element.style.display = 'block';
+    function switchLanguage(language) {
+      languageElements.forEach(function(element) {
+        if (element.classList.contains(language)) {
+          element.classList.remove("hidden");
         } else {
-          element.style.display = 'none';
+          element.classList.add("hidden");
         }
       });
     }
   
-    languageButtons.forEach(button => {
-      button.addEventListener('click', function () {
-        const lang = button.getAttribute('data-language');
-        switchLanguage(lang);
+    languageButtons.forEach(function(button) {
+      button.addEventListener("click", function() {
+        switchLanguage(button.dataset.language);
       });
     });
-  
-    switchLanguage('ja');
   });
+  
