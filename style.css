@@ -123,10 +123,16 @@ body {
   
   .language-switch {
     display: flex;
-    justify-content: flex-end;
-    padding: 1rem;
+    justify-content: space-between;
+    align-items:center;
+    padding: 10px 20px;
   }
   
+.logo {
+  max-height:40px;
+  margin-right:10px;
+}
+
   .language-button {
     background-color: #222;
     color: #fff;
