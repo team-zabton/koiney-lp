@@ -121,16 +121,22 @@ body {
     text-align: center;
   }
   
-  .language-switch {
+  .header {
     display: flex;
     justify-content: space-between;
     align-items:center;
     padding: 10px 20px;
   }
+
+  .language-switch {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+  }
   
 .logo {
-  max-height:40px;
-  max-width: 120px; /* 任意のピクセル数を指定 */
+  max-height:80px;
+  max-width: 200px; /* 任意のピクセル数を指定 */
   margin-right:10px;
 }
 
