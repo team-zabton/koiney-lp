@@ -130,6 +130,7 @@ body {
   
 .logo {
   max-height:40px;
+  max-width: 120px; /* 任意のピクセル数を指定 */
   margin-right:10px;
 }
 
