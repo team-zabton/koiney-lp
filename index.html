@@ -6,6 +6,22 @@
   <title>Koiney - コミュニティアプリ</title>
   <link rel="stylesheet" href="style.css">
   <script src="languageSwitch.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const language = navigator.language || navigator.userLanguage;
+      const privacyPolicyLink = document.getElementById('privacy-policy-link');
+      const termsOfServiceLink = document.getElementById('terms-of-service-link');
+  
+      if (language.startsWith('ja')) {
+        privacyPolicyLink.href = 'privacy_policy_ja.html';
+        termsOfServiceLink.href = 'terms_of_service_ja.html';
+      } else {
+        privacyPolicyLink.href = 'privacy_policy_en.html';
+        termsOfServiceLink.href = 'terms_of_service_en.html';
+      }
+    });
+  </script>
+  
 </head>
 <body>
   <div class="language-switch">
@@ -70,10 +86,12 @@
     <p class="footer-text ja">© 2023 Koiney. すべての権利を保有。</p>
     <p class="footer-text en hidden">© 2023 Koiney. All rights reserved.</p>
     <div class="footer-links">
-      <a href="privacy_policy.html" class="footer-link ja">プライバシーポリシー</a>
+      <!-- <a href="privacy_policy.html" class="footer-link ja">プライバシーポリシー</a>
       <a href="privacy_policy.html" class="footer-link en">Privacy Policy</a>
       <a href="terms_of_service.html" class="footer-link ja">利用規約</a>
-      <a href="terms_of_service.html" class="footer-link en">Terms of Service</a>
+      <a href="terms_of_service.html" class="footer-link en">Terms of Service</a> -->
+      <a id="privacy-policy-link" href="#">プライバシーポリシー</a>
+      <a id="terms-of-service-link" href="#">利用規約</a>
     </div>
   </footer>
 </body>
