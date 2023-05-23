@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,75 +8,79 @@
   <link rel="stylesheet" href="style.css">
   <script src="scripts.js" defer></script>
   <link rel="icon" href="img/favicon.png" type="image/png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
+
 <body>
   <div class="language-switch">
     <button class="language-button" data-language="ja">日本語</button>
     <button class="language-button" data-language="en">English</button>
   </div>
-  <h1 class="ja">利用規約</h1>
-  <h1 class="en hidden">Terms of Service</h1>
+  <div class="container-lg">
+    <h1 class="ja">利用規約</h1>
+    <h1 class="en hidden">Terms of Service</h1>
 
-  <!-- ここに日本語版の利用規約の内容を追加してください -->
-  <div class="content ja">
-    <section>
+    <!-- ここに日本語版の利用規約の内容を追加してください -->
+    <div class="content ja">
+      <section>
         <h2>1. 利用登録</h2>
         <p>ユーザーは、本アプリの利用にあたり、利用登録を行うものとします。</p>
         <br>
-    </section>
-    <section>
+      </section>
+      <section>
         <h2>2. ユーザーIDおよびパスワードの管理</h2>
         <p>ユーザーは、自己の責任において、ユーザーIDおよびパスワードを管理するものとします。</p>
         <br>
-    </section>
-    <section>
+      </section>
+      <section>
         <h2>3. 禁止事項</h2>
         <p>ユーザーは、本アププリにおいて、以下の行為を禁止します。</p>
         <ol>
-            <li>a. 法令または公序良俗に違反する行為</li>
-            <li>b. 犯罪行為に関連する行為</li>
-            <li>c. 当アプリの運営を妨害する行為</li>
-            <li>d. 他のユーザーに対する嫌がらせや迷惑行為</li>
-            <li>e. 本アプリが許可していない広告や宣伝行為</li>
-            <li>f. その他、運営が不適切と判断する行為</li>
+          <li>a. 法令または公序良俗に違反する行為</li>
+          <li>b. 犯罪行為に関連する行為</li>
+          <li>c. 当アプリの運営を妨害する行為</li>
+          <li>d. 他のユーザーに対する嫌がらせや迷惑行為</li>
+          <li>e. 本アプリが許可していない広告や宣伝行為</li>
+          <li>f. その他、運営が不適切と判断する行為</li>
         </ol>
         <br>
-    </section>
-    <section>
+      </section>
+      <section>
         <h2>4. 本アプリの提供の停止等</h2>
         <p>運営は、以下のいずれかの事由があると判断した場合、ユーザーに事前通知することなく本アプリの全部または一部の提供を停止することがあります。</p>
         <ol>
-            <li>a. システム保守やアップデートのため</li>
-            <li>b. 災害や緊急事態により本アプリの提供が困難な場合</li>
-            <li>c. その他、運営が提供の停止を必要と判断する事由が発生した場合</li>
+          <li>a. システム保守やアップデートのため</li>
+          <li>b. 災害や緊急事態により本アプリの提供が困難な場合</li>
+          <li>c. その他、運営が提供の停止を必要と判断する事由が発生した場合</li>
         </ol>
         <br>
-    </section>
-    <section>
+      </section>
+      <section>
         <h2>5. 免責事項</h2>
         <p>運営は、本アプリの提供にあたり、ユーザーに対して一切の保証を行いません。また、運営は本アプリの利用により発生したユーザーの損害について、一切の責任を負いません。</p>
         <br>
-    </section>
-    <section>
+      </section>
+      <section>
         <h2>6. 利用規約の変更</h2>
         <p>運営は、本利用規約を適宜見直し、改定することがあります。改定内容はアプリ内で通知し、通知後にユーザーが本アプリを利用した場合、改定内容に同意したものとみなされます。</p>
         <br>
-    </section>
-        
-  </div>
+      </section>
 
-  <!-- ここに英語版の利用規約の内容を追加してください -->
-  <div class="content en hidden">
-    <section>
+    </div>
+
+    <!-- ここに英語版の利用規約の内容を追加してください -->
+    <div class="content en hidden">
+      <section>
         <h2>1. User registration</h2>
         <p>Users are required to register for the use of this app.</p>
       </section>
-  
+
       <section>
         <h2>2. Management of user ID and password</h2>
         <p>Users are responsible for managing their user ID and password.</p>
       </section>
-  
+
       <section>
         <h2>3. Prohibited actions</h2>
         <p>Users are prohibited from engaging in the following actions within the app:</p>
@@ -88,30 +93,41 @@
           <li>f. Any other actions deemed inappropriate by the app operator</li>
         </ul>
       </section>
-  
+
       <section>
         <h2>4. Suspension of the app's services</h2>
-        <p>The app operator may suspend all or part of the app's services without prior notice to users if any of the following reasons are determined:</p>
+        <p>The app operator may suspend all or part of the app's services without prior notice to users if any of the
+          following reasons are determined:</p>
         <ul>
           <li>a. For system maintenance or updates</li>
           <li>b. When the provision of the app becomes difficult due to disasters or emergencies</li>
           <li>c. When any other reasons occur that the app operator deems necessary to suspend the services</li>
         </ul>
       </section>
-  
+
       <section>
         <h2>5. Disclaimer</h2>
-        <p>The app operator does not provide any warranties to users regarding the provision of this app. Furthermore, the app operator shall not be liable for any damages incurred by users as a result of using the app.</p>
+        <p>The app operator does not provide any warranties to users regarding the provision of this app. Furthermore,
+          the
+          app operator shall not be liable for any damages incurred by users as a result of using the app.</p>
       </section>
-  
+
       <section>
         <h2>6. Changes to the Terms of Service</h2>
-        <p>The app operator may periodically review and revise these Terms of Service. Revisions will be notified within the app, and if a user continues to use the app after the notification, the user is deemed to have agreed to the revised terms.</p>
+        <p>The app operator may periodically review and revise these Terms of Service. Revisions will be notified within
+          the app, and if a user continues to use the app after the notification, the user is deemed to have agreed to
+          the
+          revised terms.</p>
       </section>
 
+    </div>
+    <div>
+      <a href="index.html" class="ja">ホームに戻る</a>
+      <a href="index.html" class="en hidden">Return to Home</a>
+    </div>
   </div>
 
-  <a href="index.html" class="ja">ホームに戻る</a>
-  <a href="index.html" class="en hidden">Return to Home</a>
+
 </body>
+
 </html>
