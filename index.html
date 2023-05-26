@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +8,17 @@
   <link rel="stylesheet" href="style.css">
   <script src="scripts.js" defer></script>
   <link rel="icon" href="img/favicon.png" type="image/png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
+
 <body>
   <div class="header">
     <img src="img/logo_yoko.png" alt="Koiney Logo" class="logo">
     <div>
       <button class="language-button" data-language="ja">日本語</button>
       <button class="language-button" data-language="en">English</button>
-  </div>
+    </div>
   </div>
 
   <header class="hero">
@@ -23,11 +27,11 @@
     <p class="subtitle ja">音楽フェスやイベントで一緒に楽しむ仲間を見つけよう</p>
     <p class="subtitle en hidden">Find new friends to enjoy music festivals and events together</p>
     <div class="cta-buttons">
-      <a href="#" class="cta-button ja">アプリを入手</a>
-      <a href="#" class="cta-button en hidden">Get the App</a>
+      <a href="#download" class="cta-button ja">アプリを入手</a>
+      <a href="#download" class="cta-button en hidden">Get the App</a>
     </div>
   </header>
-  <section class="features">
+  <section class="features container-lg">
     <div class="feature">
       <img src="img/feature1.png" alt="Feature 1">
       <h2 class="feature-title ja">位置情報を共有</h2>
@@ -50,51 +54,58 @@
       <p class="feature-description en hidden">Enjoy chatting within the app and find new friends.</p>
     </div>
   </section>
-  <section class="download">
+  <section class="download" id="download">
     <h2 class="download-title ja">さあ、始めよう</h2>
     <h2 class="download-title en hidden">Get Started</h2>
     <p class="download-description ja">KoineyアプリはiOSとAndroidに対応しています。今すぐ無料でダウンロードしましょう。</p>
-    <p class="download-description en hidden">Koiney app is available for both iOS and Android. Download now for free.</p>
-    <div class="download-buttons">
-        <a href="#" class="download-button ja store-icons"><img src="img/app_store_badge.png" alt="iOSでダウンロード"></a>
-        <a href="#" class="download-button en hidden store-icons"><img src="img/app_store_badge.png" alt="Download on iOS"></a>
-        <a href="#" class="download-button ja store-icons"><img src="img/google_play_badge.png" alt="Google Playでダウンロード"></a>
-        <a href="#" class="download-button en hidden store-icons"><img src="img/google_play_badge.png" alt="Download on Google Play"></a>
-    </div>
-    </section>
-    <section class="contact">
-        <h2 class="contact-title ja">お問い合わせ</h2>
-        <h2 class="contact-title en hidden">Contact Us</h2>
-        <p class="contact-description ja">ご質問やご意見がございましたらお気軽にお問い合わせください。</p>
-        <p class="contact-description en hidden">If you have any questions or comments, please feel free to contact us.</p>
-        <a id="open-modal" class="contact-button ja">お問い合わせ</a>
-        <div id="modal" class="modal">
-          <div class="modal-content">
-            <span id="close-modal" class="close">&times;</span>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfmnPtqEGRArn1WnD543RhfcRbTnj4OvJYO4uLllrhpbGEi0Q/viewform?embedded=true" width="640" height="645" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-          </div>
-        </div>
-        <a id="open-modal" class="contact-button en hidden">Contact</a>
-        <div id="modal" class="modal">
-          <div class="modal-content">
-            <span id="close-modal" class="close">&times;</span>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfmnPtqEGRArn1WnD543RhfcRbTnj4OvJYO4uLllrhpbGEi0Q/viewform?embedded=true" width="640" height="645" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-          </div>
-        </div>
-        
-    </section>
+    <p class="download-description en hidden">Koiney app is available for both iOS and Android. Download now for free.
+    </p>
+    <div class="download-buttons d-flex justify-content-center align-items-center">
+      <a href="https://apps.apple.com/us/app/koiney/id6447347170" class="download-button ja store-icons">
+        <img width="100" src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg"
+          alt="iOSでダウンロード">
+      </a>
+      <a href="https://apps.apple.com/us/app/koiney/id6447347170" class="download-button en hidden store-icons">
+        <img width="100" src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg"
+          alt="Download on iOS"></a>
+      <a class="en hidden"
+        href="https://play.google.com/store/apps/details?id=com.koiney.app&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
+        <img width="150" alt="Get it on Google Play"
+          src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" />
+      </a>
 
-  <footer>
-    <p class="footer-text ja">© 2023 Koiney. すべての権利を保有。</p>
-    <p class="footer-text en hidden">© 2023 Koiney. All rights reserved.</p>
-    <div class="footer-links">
-      <a href="privacy_policy.html" class="footer-link ja">プライバシーポリシー</a>
-      <a href="privacy_policy.html" class="footer-link en hidden">Privacy Policy</a>
-      <a href="terms_of_service.html" class="footer-link ja">利用規約</a>
-      <a href="terms_of_service.html" class="footer-link en hidden">Terms of Service</a>
-      <br><br>
+      <a class="ja"
+        href="https://play.google.com/store/apps/details?id=com.koiney.app&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
+        <img width="150" alt="Google Play で手に入れよう"
+          src="https://play.google.com/intl/en_us/badges/static/images/badges/ja_badge_web_generic.png" /></a>
+    </div>
+  </section>
+  <section class="contact">
+    <h2 class="contact-title ja">お問い合わせ</h2>
+    <h2 class="contact-title en hidden">Contact Us</h2>
+    <p class="contact-description ja">ご質問やご意見がございましたらお気軽にお問い合わせください。</p>
+    <p class="contact-description en hidden">If you have any questions or comments, please feel free to contact us.</p>
+    <a href="contact.html" class="btn btn-primary"><span class="ja">お問い合わせ</span><span
+        class="en hidden">Contact</span></a>
+
+
+  </section>
+
+  <footer class="bg-dark pt-4">
+    <div class="container-lg d-flex align-items-center flex-column">
+      <div>
+        <p class="footer-text ja text-white-50">© 2023 Koiney. すべての権利を保有。</p>
+        <p class="footer-text en hidden">© 2023 Koiney. All rights reserved.</p>
+      </div>
+      <div class="footer-links">
+        <a href="privacy_policy.html" class="footer-link ja">プライバシーポリシー</a>
+        <a href="privacy_policy.html" class="footer-link en hidden">Privacy Policy</a>
+        <a href="terms_of_service.html" class="footer-link ja">利用規約</a>
+        <a href="terms_of_service.html" class="footer-link en hidden">Terms of Service</a>
+        <br><br>
+      </div>
     </div>
   </footer>
 </body>
-</html>
 
+</html>
